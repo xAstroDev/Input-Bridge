@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/darkGray" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/copyElementTool" android:padding="4dp" android:layout_width="35dp" android:layout_height="35dp" app:srcCompat="@drawable/tb_copy_icon"/>
+    <ImageView android:id="@+id/pasteElementTool" android:padding="4dp" android:layout_width="35dp" android:layout_height="35dp" app:srcCompat="@drawable/tb_paste_icon"/>
+    <View android:background="@color/lightGray" android:layout_width="match_parent" android:layout_height="2dp"/>
+    <ImageView android:id="@+id/copyElementStyleTool" android:padding="4dp" android:layout_width="35dp" android:layout_height="35dp" app:srcCompat="@drawable/tb_copy_icon_style"/>
+    <ImageView android:id="@+id/pasteElementStyleTool" android:padding="4dp" android:layout_width="35dp" android:layout_height="35dp" app:srcCompat="@drawable/tb_paste_icon_style"/>
+</LinearLayout>

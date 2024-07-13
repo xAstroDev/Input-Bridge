@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingStart="5dp" android:paddingEnd="5dp">
+    <TextView android:textSize="20sp" android:textColor="@color/darkGray" android:id="@+id/textView6" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="5dp" android:text="@string/icon_packs_manager" android:layout_weight="0"/>
+    <TextView android:textColor="@color/darkGray" android:id="@+id/packsFoundCount" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="5dp" android:text="Found 0 packs" android:layout_weight="0"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/iconPacksView" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:id="@+id/createNewIconPack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/create" android:layout_weight="1"/>
+        <Button android:id="@+id/installIconPack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/install" android:layout_marginStart="5dp"/>
+    </LinearLayout>
+</LinearLayout>

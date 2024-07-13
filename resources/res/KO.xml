@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:isScrollContainer="false">
+    <com.catfixture.inputbridge.ui.custom.Chapter android:layout_width="match_parent" android:layout_height="wrap_content" app:title="@string/touch_controls"/>
+    <CheckBox android:textColor="@color/darkGray" android:id="@+id/showControlsWhenConnected" android:layout_width="match_parent" android:layout_height="30dp" android:layout_marginTop="5dp" android:text="@string/show_controls_when_connected"/>
+    <CheckBox android:textColor="@color/darkGray" android:id="@+id/hideTouchControls" android:layout_width="match_parent" android:layout_height="30dp" android:text="@string/hide_all_don_t_inflate_touch_controls_text"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/icmp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <CheckBox android:textColor="@color/darkGray" android:id="@+id/integrateControls" android:layout_width="match_parent" android:layout_height="30dp" android:text="@string/integrate_controls_text"/>
+        <com.catfixture.inputbridge.ui.custom.WarningComponent android:orientation="vertical" android:id="@+id/acsNotLaunchedWarn" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="-10dp" android:layout_marginRight="20dp" app:warningText="Accessibility service not launched">
+            <Button android:textColor="@color/white" android:id="@+id/openAccessSettings" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:text="@string/settings" android:backgroundTint="@color/blueSat"/>
+        </com.catfixture.inputbridge.ui.custom.WarningComponent>
+        <Spinner android:id="@+id/integrateControlsType" android:background="#f3f3f3" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="5dp" android:popupBackground="#f3f3f3" android:layout_weight="0"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp">
+            <CheckBox android:textColor="@color/darkGray" android:id="@+id/icMaximize" android:layout_width="wrap_content" android:layout_height="30dp" android:text="@string/integrate_controls_max_text"/>
+            <CheckBox android:textColor="@color/darkGray" android:id="@+id/icHidePanels" android:layout_width="wrap_content" android:layout_height="30dp" android:text="@string/integrate_controls_hide_text"/>
+        </LinearLayout>
+    </LinearLayout>
+    <CheckBox android:textColor="@color/darkGray" android:id="@+id/enableTouchRumble" android:layout_width="match_parent" android:layout_height="30dp" android:layout_marginTop="5dp" android:text="@string/enable_touch_rumble"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/touchRumbleCont" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <SeekBar android:id="@+id/rumbleImputusTime" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:max="100" android:progress="30" android:layout_weight="1"/>
+        <TextView android:textColor="@color/darkGray" android:id="@+id/rumbleImputusTimeLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="200" android:layout_weight="0"/>
+        <TextView android:textColor="@color/darkGray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="ms" android:layout_weight="0"/>
+    </LinearLayout>
+    <CheckBox android:textColor="@color/darkGray" android:id="@+id/enableXInput" android:layout_width="match_parent" android:layout_height="30dp" android:layout_marginTop="5dp" android:text="@string/enable_xinput"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/xInputCont" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <CheckBox android:textColor="@color/darkGray" android:id="@+id/showXIFPS" android:layout_width="match_parent" android:layout_height="30dp" android:layout_marginLeft="20dp" android:layout_marginTop="5dp" android:text="@string/show_xinput_fps"/>
+        <CheckBox android:textColor="@color/darkGray" android:id="@+id/enableXInputRumble" android:layout_width="match_parent" android:layout_height="30dp" android:layout_marginLeft="20dp" android:layout_marginTop="5dp" android:text="@string/enable_rumble"/>
+    </LinearLayout>
+    <Button android:textColor="@color/white" android:id="@+id/editControls" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/edit_controls" android:backgroundTint="@color/blueSat"/>
+    <Button android:textColor="@color/white" android:id="@+id/repairOldProfile" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/repair_old_profile_text" android:backgroundTint="@color/blueSat"/>
+</LinearLayout>

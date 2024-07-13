@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="vertical" android:background="@color/halfBlack" android:padding="10dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/white" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.catfixture.inputbridge.ui.custom.Chapter android:layout_width="match_parent" android:layout_height="wrap_content" app:title="@string/choose_directory_text"/>
+        <Button android:id="@+id/chooseDownloadFolderButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/download_folder_text" android:layout_weight="0"/>
+        <Button android:id="@+id/chooseOtherFolderButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/other_folder_text"/>
+        <Button android:id="@+id/closeButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/close_text"/>
+    </LinearLayout>
+</LinearLayout>

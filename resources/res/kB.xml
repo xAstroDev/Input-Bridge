@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/type_text"/>
+    <Spinner android:id="@+id/buttonType" android:layout_width="match_parent" android:layout_height="35dp" android:foreground="@color/lighterRecordBg" android:popupBackground="@color/darkGray" android:backgroundTint="@color/white"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/xinputcodeRow" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="XI code"/>
+        <Spinner android:id="@+id/xinputcode" android:layout_width="match_parent" android:layout_height="35dp" android:foreground="@color/lighterRecordBg" android:popupBackground="@color/darkGray" android:backgroundTint="@color/white"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/kbcodeRow" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/key_code_text"/>
+        <Spinner android:id="@+id/buttonCode" android:layout_width="match_parent" android:layout_height="35dp" android:foreground="@color/lighterRecordBg" android:popupBackground="@color/darkGray" android:backgroundTint="@color/white"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/mscodeRow" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mouse_code_text"/>
+        <Spinner android:id="@+id/mouseCode" android:layout_width="match_parent" android:layout_height="35dp" android:foreground="@color/lighterRecordBg" android:popupBackground="@color/darkGray" android:backgroundTint="@color/white"/>
+    </LinearLayout>
+</LinearLayout>

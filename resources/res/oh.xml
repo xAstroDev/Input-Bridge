@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:padding="10dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textColor="@color/white" android:id="@+id/strokeWidthLabel" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/strokeWidth_local" android:layout_weight="0"/>
+            <SeekBar android:id="@+id/strokeWidthSlider" android:layout_width="match_parent" android:layout_height="wrap_content" android:max="80" android:progress="80" android:layout_weight="0" android:progressBackgroundTint="@color/white"/>
+            <include android:id="@+id/strokeColor" layout="@layout/color_picker_field_layout"/>
+            <CheckBox android:textColor="@color/white" android:id="@+id/enableFill" android:layout_width="match_parent" android:layout_height="30dp" android:text="Enable fill" android:layout_marginStart="-7dp"/>
+            <include android:id="@+id/fillColor" layout="@layout/color_picker_field_layout"/>
+            <TextView android:textColor="@color/white" android:id="@+id/cornerRadiusText" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/cornerRadius_local" android:layout_weight="0"/>
+            <SeekBar android:id="@+id/cornerRadiusSlider" android:layout_width="match_parent" android:layout_height="wrap_content" android:max="80" android:progress="80" android:layout_weight="0" android:progressBackgroundTint="@color/white"/>
+            <include layout="@layout/fine_tune_editor_shadow_layout"/>
+        </LinearLayout>
+    </ScrollView>
+    <Button android:id="@+id/back" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="Back"/>
+</LinearLayout>

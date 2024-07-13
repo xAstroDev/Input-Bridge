@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <Spinner android:id="@+id/keyCode" android:layout_width="match_parent" android:layout_height="35dp" android:foreground="@color/lighterRecordBg" android:popupBackground="@color/darkGray" android:layout_weight="1" android:backgroundTint="@color/white"/>
+    <Button android:id="@+id/remove" android:layout_width="40dp" android:layout_height="40dp" android:text="@string/close_icon" android:layout_weight="0" android:layout_marginStart="5dp"/>
+</LinearLayout>

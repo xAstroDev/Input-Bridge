@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:isScrollContainer="false">
+    <LinearLayout android:orientation="vertical" android:id="@+id/authorChapter" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.catfixture.inputbridge.ui.custom.Chapter android:layout_width="match_parent" android:layout_height="wrap_content" app:title="@string/author_text"/>
+        <TextView android:textSize="18sp" android:textStyle="bold" android:textColor="@color/darkGray" android:id="@+id/textView3" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/dmitry_sanieiev_dotnetburst_text"/>
+    </LinearLayout>
+    <com.catfixture.inputbridge.ui.custom.Chapter android:id="@+id/thankChapter" android:layout_width="match_parent" android:layout_height="wrap_content" app:title="@string/thanks"/>
+    <TextView android:textColor="@color/darkGray" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/thanks_title"/>
+    <TextView android:textSize="18sp" android:textStyle="bold" android:textColor="@color/darkGray" android:id="@+id/thanksNames" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/thanks"/>
+    <ImageView android:id="@+id/discordHook" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:scaleType="fitStart" app:srcCompat="@drawable/exa_international"/>
+    <Button android:textColor="@color/white" android:id="@+id/manualButton" android:background="@drawable/ib_button" android:padding="0dp" android:layout_width="match_parent" android:layout_height="35dp" android:layout_marginTop="5dp" android:text="@string/manual_text"/>
+    <Button android:textColor="@color/white" android:id="@+id/dbg" android:background="@drawable/ib_button" android:padding="0dp" android:layout_width="match_parent" android:layout_height="35dp" android:layout_marginTop="5dp" android:text="@string/dbg"/>
+</LinearLayout>

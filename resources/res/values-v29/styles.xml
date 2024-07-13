@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="DefaultSwitch">
+        <item name="android:colorForeground">@android:color/darker_gray</item>
+        <item name="?0x101058c">false</item>
+        <item name="colorControlActivated">@android:color/holo_green_light</item>
+        <item name="colorSwitchThumbNormal">@android:color/holo_orange_dark</item>
+    </style>
+    <style name="Theme.InputBridge">
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <item name="?0x101058c">false</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="colorPrimary">@color/lighterGray</item>
+        <item name="colorPrimaryVariant">@color/darkGray</item>
+        <item name="colorSecondary">@color/blueSat</item>
+        <item name="colorSecondaryVariant">@color/blueSat</item>
+    </style>
+</resources>

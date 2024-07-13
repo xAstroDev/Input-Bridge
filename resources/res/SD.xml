@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textColor="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/shape_text"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Spinner android:id="@+id/buttonShape" android:layout_width="match_parent" android:layout_height="35dp" android:foreground="@color/lighterRecordBg" android:popupBackground="@color/darkGray" android:layout_weight="1" android:backgroundTint="@color/white"/>
+        <ImageView android:id="@+id/openShapeSettings" android:padding="5dp" android:layout_width="35dp" android:layout_height="35dp" android:src="@drawable/wrench"/>
+    </LinearLayout>
+    <include layout="@layout/editable_icon_element"/>
+    <TextView android:textColor="@color/white" android:id="@+id/customTextLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/custom_text"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <EditText android:textSize="12sp" android:textColor="@color/white" android:textColorHint="@color/lightestGray" android:id="@+id/customText" android:background="@color/lighterRecordBg" android:layout_width="match_parent" android:layout_height="35dp" android:hint="@string/custom_text" android:layout_weight="1" android:paddingStart="5dp" android:paddingEnd="5dp"/>
+        <ImageView android:id="@+id/openTextSettings" android:padding="5dp" android:layout_width="35dp" android:layout_height="35dp" android:src="@drawable/wrench"/>
+    </LinearLayout>
+</LinearLayout>

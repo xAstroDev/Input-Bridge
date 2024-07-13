@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:longClickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layerType="hardware" android:paddingStart="5dp">
+    <TableRow android:id="@+id/ramTextCC" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:theme="@style/StatisticCommonText" android:textColor="@color/ramColor" android:id="@+id/ramTextLab" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="RAM"/>
+        <LinearLayout android:gravity="top" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="5dp">
+            <TextView android:theme="@style/StatisticCommonText" android:textColor="@color/orangeValue" android:id="@+id/ramText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0"/>
+            <TextView android:theme="@style/StatisticMicroText" android:textColor="@color/orangeValue" android:id="@+id/ramSmLab" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="MB" android:layout_marginStart="5dp"/>
+        </LinearLayout>
+    </TableRow>
+    <TableRow android:id="@+id/fpsTextCC" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:theme="@style/StatisticCommonText" android:id="@+id/apiText" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="XI13"/>
+        <LinearLayout android:gravity="top" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="5dp">
+            <TextView android:theme="@style/StatisticCommonText" android:textColor="@color/white" android:id="@+id/fpsText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0"/>
+            <TextView android:theme="@style/StatisticMicroText" android:textColor="@color/white" android:id="@+id/fpsSmLab" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="FPS" android:layout_marginStart="5dp"/>
+        </LinearLayout>
+    </TableRow>
+</TableLayout>

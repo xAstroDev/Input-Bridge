@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <CheckBox android:textColor="@color/white" android:id="@+id/drawShadow" android:layout_width="match_parent" android:layout_height="30dp" android:text="Draw shadow" android:layout_marginStart="-7dp"/>
+    <SeekBar android:id="@+id/shadowRadius" android:layout_width="match_parent" android:layout_height="wrap_content" android:max="20" android:progress="4" android:layout_weight="0" android:progressBackgroundTint="@color/white"/>
+</LinearLayout>

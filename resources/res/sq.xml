@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:background="@color/lightestTint" android:layout_width="match_parent" android:layout_height="65dp">
+    <ImageView android:id="@+id/preview" android:layout_width="60dp" android:layout_height="60dp" android:scaleType="fitXY" android:layout_weight="0" app:srcCompat="@drawable/warn_ico"/>
+    <LinearLayout android:gravity="top" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1" android:layout_marginStart="5dp">
+        <TextView android:textColor="@color/darkGray" android:id="@+id/name" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Name: Image1_.png"/>
+        <TextView android:textColor="@color/darkGray" android:id="@+id/size" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Size: 300x200"/>
+    </LinearLayout>
+    <ImageView android:id="@+id/removeButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0" app:srcCompat="@android:drawable/ic_delete"/>
+</LinearLayout>

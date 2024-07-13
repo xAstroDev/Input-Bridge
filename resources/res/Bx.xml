@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:isScrollContainer="false">
+    <com.catfixture.inputbridge.ui.custom.Chapter android:layout_width="match_parent" android:layout_height="wrap_content" app:title="@string/physical_controllers"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+        <com.catfixture.inputbridge.ui.custom.WarningComponent android:id="@+id/noControllersFound" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="-10dp" app:warningText="@string/no_controllers"/>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/controllersList" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/parentLayout" android:background="@color/black" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="20sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="User guide" android:layout_weight="0"/>
+            <TextView android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="The instruction is not yet complete, as it is developed, I will fill it out..." android:layout_weight="0"/>
+            <com.catfixture.inputbridge.ui.custom.Spoiler android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" app:contentShow="false" app:sid="1" app:titleText="About the program">
+                <TextView android:textColor="@color/darkGray" android:id="@+id/textView22" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Input Bridge is designed to integrate control into Exagear, allowing you to play 2D/3D games comfortably. It also supports the connection of peripheral devices (mouse, keyboard, gamepad)." android:layout_weight="0"/>
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0">
+                    <com.catfixture.inputbridge.ui.custom.Spoiler android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" app:sid="2" app:titleText="Supported versions of Exagear and Wine">
+                        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <TextView android:textColor="@color/darkGray" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="The following versions of Exagear have been verified and tested:"/>
+                            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp">
+                                <TextView android:textColor="@color/darkGray" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="◦ Standart Exagear Eltechs"/>
+                                <TextView android:textColor="@color/darkGray" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="◦ Exagear SU (Ludashi, Antutu)"/>
+                                <TextView android:textColor="@color/darkGray" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="◦ Red Exagear"/>
+                            </LinearLayout>
+                            <TextView android:textColor="@color/darkGray" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Wine:"/>
+                            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp">
+                                <TextView android:textColor="@color/darkGray" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="◦ Wine 3.05"/>
+                                <TextView android:textColor="@color/darkGray" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="◦ Wine 3.10"/>
+                                <TextView android:textColor="@color/darkGray" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="◦ Wine 4"/>
+                                <TextView android:textColor="@color/darkGray" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="◦ Wine 6.0"/>
+                                <TextView android:textColor="@color/darkGray" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="◦ Wine 6.02"/>
+                                <TextView android:textColor="@color/darkGray" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="◦ Wine 7"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </com.catfixture.inputbridge.ui.custom.Spoiler>
+                </LinearLayout>
+            </com.catfixture.inputbridge.ui.custom.Spoiler>
+            <com.catfixture.inputbridge.ui.custom.Spoiler android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" app:sid="3" app:titleText="Installation">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textColor="@color/darkGray" android:id="@+id/textView10" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="To install and configure the service, you must perform the following steps in a convenient and accessible way for you."/>
+                    <com.catfixture.inputbridge.ui.custom.Spoiler android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" app:sid="4" app:titleText="Root folder">
+                        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <TextView android:textColor="@color/darkGray" android:id="@+id/textView21" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="The Exagear application uses files from a specific user folder on your device, the default is the &apos;Download&apos; folder. You can change the application&apos;s root folder, depending on which folder the Exagear application requires."/>
+                        </LinearLayout>
+                    </com.catfixture.inputbridge.ui.custom.Spoiler>
+                    <com.catfixture.inputbridge.ui.custom.Spoiler android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" app:sid="5" app:titleText="Getting service">
+                        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <TextView android:textColor="@color/darkGray" android:id="@+id/textView11" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="You need to get the installer files."/>
+                            <com.catfixture.inputbridge.ui.custom.Spoiler android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" app:sid="6" app:titleText="Method 1">
+                                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                                    <TextView android:textColor="@color/darkGray" android:id="@+id/textView13" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="On the &apos;Settings&apos; tab, click on the &apos;Copy installer to root folder&apos; button."/>
+                                </LinearLayout>
+                            </com.catfixture.inputbridge.ui.custom.Spoiler>
+                            <com.catfixture.inputbridge.ui.custom.Spoiler android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" app:sid="7" app:titleText="Method 2">
+                                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                                    <TextView android:textColor="@color/darkGray" android:id="@+id/textView14" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="On the &apos;Settings&apos; tab, click on the &apos;Google Drive&apos; button, download the install.zip archive. Unzip to a folder accessible from Exagear."/>
+                                </LinearLayout>
+                            </com.catfixture.inputbridge.ui.custom.Spoiler>
+                        </LinearLayout>
+                    </com.catfixture.inputbridge.ui.custom.Spoiler>
+                    <com.catfixture.inputbridge.ui.custom.Spoiler android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" app:sid="8" app:titleText="Service installation">
+                        <TextView android:textColor="@color/darkGray" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="The service must be installed, you can not install it in case of manual launch."/>
+                        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <com.catfixture.inputbridge.ui.custom.Spoiler android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" app:sid="9" app:titleText="Method 1 (Automatic)">
+                                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                                    <TextView android:textColor="@color/darkGray" android:id="@+id/textView15" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Launch the Input Bridge service installer. For example D:\\InputBridge\\Installer\\install.bat."/>
+                                </LinearLayout>
+                            </com.catfixture.inputbridge.ui.custom.Spoiler>
+                            <com.catfixture.inputbridge.ui.custom.Spoiler android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" app:sid="10" app:titleText="Method 2 (Manual)">
+                                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                                    <TextView android:textColor="@color/darkGray" android:id="@+id/textView16" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Manually copy all files from the Installer folder to Z:\\usr\\bin."/>
+                                </LinearLayout>
+                            </com.catfixture.inputbridge.ui.custom.Spoiler>
+                        </LinearLayout>
+                    </com.catfixture.inputbridge.ui.custom.Spoiler>
+                    <com.catfixture.inputbridge.ui.custom.Spoiler android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" app:sid="11" app:titleText="Launch setup">
+                        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <TextView android:textColor="@color/darkGray" android:id="@+id/textView17" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Upon successful launch, a gear should appear in the upper right corner of the screen to manage the settings of the Input Bridge service."/>
+                            <com.catfixture.inputbridge.ui.custom.Spoiler android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" app:sid="12" app:titleText="Method 1 (Permanent)">
+                                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                                    <TextView android:textColor="@color/darkGray" android:id="@+id/textView18" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Create a shortcut to the game, go to the desktop through the TFM file manager, find the file with the name of the game and the resolution .desktop, open it with a text editor and add “ib” in the Exec parameter at the beginning, save. Restart the container, launch the Input Bridge application if not running."/>
+                                    <ImageView android:id="@+id/imageView" android:layout_width="match_parent" android:layout_height="wrap_content" app:srcCompat="@drawable/ib_install_example"/>
+                                    <com.catfixture.inputbridge.ui.custom.Spoiler android:layout_width="match_parent" android:layout_height="wrap_content" app:sid="13" app:titleText="How to create a shortcut">
+                                        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                                            <TextView android:textColor="@color/darkGray" android:id="@+id/textView25" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Right-click or long-click on the game&apos;s launcher file, select &apos;create shortcut&apos;. The shortcut will be created on the desktop."/>
+                                        </LinearLayout>
+                                    </com.catfixture.inputbridge.ui.custom.Spoiler>
+                                </LinearLayout>
+                            </com.catfixture.inputbridge.ui.custom.Spoiler>
+                            <com.catfixture.inputbridge.ui.custom.Spoiler android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" app:sid="14" app:titleText="Method 2 (Manual)">
+                                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                                    <TextView android:textColor="@color/darkGray" android:id="@+id/textView19" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Manually run ib.exe from folder InputBridge\\Installer."/>
+                                </LinearLayout>
+                            </com.catfixture.inputbridge.ui.custom.Spoiler>
+                            <com.catfixture.inputbridge.ui.custom.Spoiler android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" app:sid="15" app:titleText="Launching a game or program">
+                                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                                    <TextView android:textColor="@color/darkGray" android:id="@+id/textView20" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="To start the game, you need to open the Exagear application, go to the desktop tab and click on the shortcut.\10WARNING! When run from an Exagear container, the shortcut commands are ignored, so it won&apos;t work."/>
+                                </LinearLayout>
+                            </com.catfixture.inputbridge.ui.custom.Spoiler>
+                        </LinearLayout>
+                    </com.catfixture.inputbridge.ui.custom.Spoiler>
+                </LinearLayout>
+            </com.catfixture.inputbridge.ui.custom.Spoiler>
+            <com.catfixture.inputbridge.ui.custom.Spoiler android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" app:sid="16" app:titleText="Setting">
+                <TextView android:textColor="@color/darkGray" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="This section describes how to set up the Android Input Bridge application."/>
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <com.catfixture.inputbridge.ui.custom.Spoiler android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" app:sid="17" app:titleText="Configuring Updates">
+                        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <TextView android:textColor="@color/darkGray" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Since the update server is free and limited, it can be killed for such actions when it does not generate income for the hosting. In this case, in the main settings, you can set the address of the new server, which can be found on Google Drive, from the Updates.readme file."/>
+                        </LinearLayout>
+                    </com.catfixture.inputbridge.ui.custom.Spoiler>
+                    <com.catfixture.inputbridge.ui.custom.Spoiler android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" app:sid="18" app:titleText="Performance Tuning">
+                        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <TextView android:textColor="@color/darkGray" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="The application allows you to set the input frequency.\10◦ The update rate is the rate at which key and mouse input is updated.\10◦ IB Driver Frequency is the speed of the driver (Gamepad Axis).\10◦ Disable decorations - simplified style, slightly reduces graphics memory usage.\10◦ Disable hook - on some versions of wine the hook is not needed, if the mouse does not twitch, disable the hook."/>
+                        </LinearLayout>
+                    </com.catfixture.inputbridge.ui.custom.Spoiler>
+                    <com.catfixture.inputbridge.ui.custom.Spoiler android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" app:sid="19" app:titleText="Setting up physical controllers">
+                        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <TextView android:textColor="@color/darkGray" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="In order to set up a physical controller, you need to connect it to your phone, it should appear in the list with a green indicator. Then click on the desired controller."/>
+                            <com.catfixture.inputbridge.ui.custom.Spoiler android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" app:sid="20" app:titleText="Gamepad setup">
+                                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                                    <TextView android:textColor="@color/darkGray" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="To configure the gamepad, press any key on it to remap. There are two tabs for defining axes and buttons."/>
+                                </LinearLayout>
+                            </com.catfixture.inputbridge.ui.custom.Spoiler>
+                            <com.catfixture.inputbridge.ui.custom.Spoiler android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" app:sid="21" app:titleText="Keyboard customization">
+                                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                                    <TextView android:textColor="@color/darkGray" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="To customize the keyboard, press any key on it. If it is supported, it can be reassigned. By default, the buttons work as standard."/>
+                                </LinearLayout>
+                            </com.catfixture.inputbridge.ui.custom.Spoiler>
+                            <com.catfixture.inputbridge.ui.custom.Spoiler android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" app:sid="22" app:titleText="Mouse setup">
+                                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                                    <TextView android:textColor="@color/darkGray" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="The mouse and its capture will only work with Android Oreo (8.0), I will write my own driver later.\10There are no settings yet."/>
+                                </LinearLayout>
+                            </com.catfixture.inputbridge.ui.custom.Spoiler>
+                        </LinearLayout>
+                    </com.catfixture.inputbridge.ui.custom.Spoiler>
+                    <com.catfixture.inputbridge.ui.custom.Spoiler android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" app:sid="23" app:titleText="Touch Control Setting">
+                        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <TextView android:textColor="@color/darkGray" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Checkbox &apos;Show control on connection&apos; - shows control on first connection or after minimizing Exagear."/>
+                            <com.catfixture.inputbridge.ui.custom.Spoiler android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" app:sid="24" app:titleText="Editor">
+                                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                                    <TextView android:textColor="@color/darkGray" android:id="@+id/textView5" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="To customize the controls, click anywhere on the screen and click on the ‘Create New Item’ button, select it. It is possible to select the type of element, each type has its own settings."/>
+                                    <com.catfixture.inputbridge.ui.custom.Spoiler android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" app:sid="25" app:titleText="Settings">
+                                        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                                            <TextView android:textColor="@color/darkGray" android:id="@+id/textView4" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="In the editor settings, it is possible to set general settings for management."/>
+                                        </LinearLayout>
+                                    </com.catfixture.inputbridge.ui.custom.Spoiler>
+                                    <com.catfixture.inputbridge.ui.custom.Spoiler android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" app:sid="26" app:titleText="Element type ‘Key’">
+                                        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                                            <TextView android:textColor="@color/darkGray" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="For this type of element, it is possible to set its transparency, size, placement on the screen, shape, select an icon or specify your own text.\10There are two types of control: mouse and keyboard, depending on which the button code is selected.\10Trigger mode - when you click on button, the click event is fixed until you click on it again.\10Mouse mode - the control works not only as a button, but also for mouse movement."/>
+                                        </LinearLayout>
+                                    </com.catfixture.inputbridge.ui.custom.Spoiler>
+                                    <com.catfixture.inputbridge.ui.custom.Spoiler android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" app:sid="27" app:titleText="Element Type ‘Keyboard Combination’">
+                                        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                                            <TextView android:textColor="@color/darkGray" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="This element is designed to create any key combinations, as for this type of element, it is possible to set its transparency, size, placement on the screen, shape, select an icon or specify your own text."/>
+                                        </LinearLayout>
+                                    </com.catfixture.inputbridge.ui.custom.Spoiler>
+                                </LinearLayout>
+                            </com.catfixture.inputbridge.ui.custom.Spoiler>
+                        </LinearLayout>
+                    </com.catfixture.inputbridge.ui.custom.Spoiler>
+                </LinearLayout>
+            </com.catfixture.inputbridge.ui.custom.Spoiler>
+            <com.catfixture.inputbridge.ui.custom.Spoiler android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" app:sid="28" app:titleText="Problems and solutions">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            </com.catfixture.inputbridge.ui.custom.Spoiler>
+            <com.catfixture.inputbridge.ui.custom.Spoiler android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" app:sid="29" app:titleText="Debugging">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textColor="@color/darkGray" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Debug messages and errors can only be caught when the &apos;enable debugging&apos; checkbox is checked on the main tab.\10When the checkbox is checked, the debug button is available on the help tab, messages can be saved and sent to the developer, this will help improve the program."/>
+                </LinearLayout>
+            </com.catfixture.inputbridge.ui.custom.Spoiler>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

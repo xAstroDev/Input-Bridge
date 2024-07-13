@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <CheckBox android:textColor="@color/white" android:id="@+id/enableXInput" android:layout_width="match_parent" android:layout_height="30dp" android:text="@string/enable_xinput" android:layout_marginStart="-7dp"/>
+    <include android:id="@+id/defConf1" layout="@layout/editable_icon_element"/>
+    <include android:id="@+id/defConf2" layout="@layout/editable_movement_common"/>
+</LinearLayout>

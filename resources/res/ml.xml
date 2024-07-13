@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="horizontal" android:background="@color/nlightestTint" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="5dp">
+    <CheckBox android:id="@+id/enableSensor" android:layout_width="32dp" android:layout_height="wrap_content"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginEnd="5dp">
+        <TextView android:textColor="@color/darkGray" android:id="@+id/type" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="TextView"/>
+        <TextView android:textColor="@color/darkGray" android:id="@+id/path" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="TextView"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="20sp" android:textColor="@color/lessDarkGray" android:id="@+id/valuePreview" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:layout_weight="0" android:textAlignment="textEnd" android:layout_marginEnd="5dp"/>
+            <Spinner android:id="@+id/displayName" android:visibility="gone" android:layout_width="match_parent" android:layout_height="35dp" android:foreground="@color/lighterRecordBg" android:popupBackground="@color/white" android:layout_weight="1" android:layout_marginEnd="5dp" android:backgroundTint="@color/white" style="@style/SpinnerNoPadding"/>
+            <Spinner android:id="@+id/displayPostfix" android:visibility="gone" android:layout_width="40dp" android:layout_height="35dp" android:foreground="@color/lighterRecordBg" android:popupBackground="@color/white" android:layout_weight="0" android:layout_marginEnd="5dp" android:backgroundTint="@color/white" style="@style/SpinnerNoPadding"/>
+            <include android:id="@+id/pcolorSelector" android:visibility="gone" android:layout_width="50dp" android:layout_height="wrap_content" layout="@layout/color_picker_dark_field_layout"/>
+            <include android:id="@+id/scolorSelector" android:visibility="gone" android:layout_width="50dp" android:layout_height="wrap_content" layout="@layout/color_picker_dark_field_layout"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

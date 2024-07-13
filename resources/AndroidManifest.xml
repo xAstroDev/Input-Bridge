@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="199" android:versionName="0.1.9.9" android:compileSdkVersion="31" android:compileSdkVersionCodename="12" package="com.catfixture.inputbridge" platformBuildVersionCode="31" platformBuildVersionName="12">
+    <uses-sdk android:minSdkVersion="23" android:targetSdkVersion="31"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADVERTISE"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-feature android:name="android.hardware.usb.host"/>
+    <uses-feature android:name="android.hardware.bluetooth" android:required="true"/>
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION"/>
+    <uses-permission android:name="android.permission.USB_PERMISSION"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" android:maxSdkVersion="28"/>
+    <permission android:name="android.permission.INTERNET"/>
+    <permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <application android:theme="@style/Theme.InputBridge" android:label="@string/app_name" android:icon="@drawable/ico" android:name="com.catfixture.inputbridge.core.context.AppContext" android:allowBackup="false" android:supportsRtl="true" android:extractNativeLibs="false" android:fullBackupContent="false" android:roundIcon="@drawable/ico" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:requestLegacyExternalStorage="true">
+        <activity android:theme="@style/Theme.InputBridge.NoActionBar" android:label="@string/title_activity_icons_view" android:name="com.catfixture.inputbridge.ui.activity.iconmanager.IconsViewActivity" android:exported="false"/>
+        <activity android:theme="@style/Theme.InputBridge.NoActionBar" android:name="com.catfixture.inputbridge.ui.activity.iconmanager.IconManagerActivity" android:exported="false" android:launchMode="singleTop"/>
+        <activity android:theme="@style/Theme.InputBridge.NoActionBar" android:name="com.catfixture.inputbridge.ui.activity.sensorsView.SensorsViewActivity" android:exported="false" android:launchMode="singleTop"/>
+        <activity android:theme="@style/Theme.InputBridge.NoActionBar" android:name="com.catfixture.inputbridge.ui.activity.manual.ManualActivity" android:exported="false" android:configChanges="0"/>
+        <activity android:name="com.catfixture.inputbridge.ui.activity.editors.phyDeviceEditor.PhyDeviceEditorActivity" android:exported="false" android:screenOrientation="landscape"/>
+        <activity android:theme="@style/Theme.InputBridge.NoActionBar" android:name="com.catfixture.inputbridge.ui.activity.dbg.DBGActivity" android:exported="false"/>
+        <activity android:theme="@style/Theme.InputBridge.NoActionBar" android:name="com.catfixture.inputbridge.ui.activity.dummyTest.DummyTestActivity" android:exported="false" android:screenOrientation="landscape"/>
+        <activity android:theme="@style/Theme.InputBridge.NoActionBar" android:label="@string/app_name" android:name="com.catfixture.inputbridge.ui.activity.main.MainActivity" android:exported="true" android:launchMode="singleInstance" android:screenOrientation="fullSensor">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="content"/>
+                <data android:mimeType="application/octet-stream"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="file"/>
+                <data android:scheme="content"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:mimeType="*/*" android:host="*"/>
+                <data android:pathPattern=".*.ibp"/>
+                <data android:pathPattern=".*..*.ibp"/>
+                <data android:pathPattern=".*..*..*.ibp"/>
+                <data android:pathPattern=".*..*..*..*.ibp"/>
+                <data android:pathPattern=".*..*..*..*..*.ibp"/>
+                <data android:pathPattern=".*..*..*..*..*..*.ibp"/>
+                <data android:pathPattern=".*..*..*..*..*..*..*.ibp"/>
+                <data android:pathPattern=".*..*..*..*..*..*..*..*.ibp"/>
+                <data android:pathPattern=".*..*..*..*..*..*..*..*..*.ibp"/>
+                <data android:pathPattern=".*..*..*..*..*..*..*..*..*..*.ibp"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/Theme.InputBridge.NoActionBar" android:label="@string/app_name" android:name="com.catfixture.inputbridge.ui.activity.editors.touchEditor.TouchEditorActivity" android:exported="true" android:launchMode="singleTop" android:screenOrientation="landscape"/>
+        <service android:name="com.catfixture.inputbridge.core.service.InputService" android:enabled="true" android:exported="false" android:foregroundServiceType="20"/>
+        <service android:label="Touch emulator service" android:name="com.catfixture.inputbridge.core.access.TouchEmulatorServic" android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE" android:exported="true">
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService"/>
+            </intent-filter>
+            <meta-data android:name="android.accessibilityservice" android:resource="@xml/accessibility_service_config"/>
+        </service>
+        <provider android:name="androidx.core.content.FileProvider" android:exported="false" android:authorities="com.catfixture.inputbridge.provider" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths"/>
+        </provider>
+        <uses-library android:name="androidx.window.extensions" android:required="false"/>
+        <uses-library android:name="androidx.window.sidecar" android:required="false"/>
+    </application>
+</manifest>

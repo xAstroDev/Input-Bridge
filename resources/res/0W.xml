@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="vertical" android:background="@color/halfBlack" android:padding="10dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:padding="10dp" android:layout_width="300dp" android:layout_height="wrap_content">
+        <TextView android:textSize="20sp" android:textColor="@color/darkGray" android:id="@+id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/wait_for_complete_text"/>
+        <View android:background="@color/lightestGray" android:layout_width="match_parent" android:layout_height="2dp" android:layout_weight="1"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+            <ProgressBar android:id="@+id/progressBar2" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:attr/progressBarStyle"/>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="5dp">
+                <TextView android:textSize="14sp" android:textColor="@color/darkGray" android:id="@+id/currentTask" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/dummy"/>
+                <ProgressBar android:id="@+id/progressBar" android:layout_width="match_parent" android:layout_height="40dp" android:scaleY="4" style="?android:attr/progressBarStyleHorizontal"/>
+                <Button android:id="@+id/stopOk" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="40dp" android:text="@string/cancel_text" android:layout_weight="1"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

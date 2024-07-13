@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:isScrollContainer="false">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/previewSetupCont" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0">
+            <LinearLayout android:orientation="vertical" android:id="@+id/previewCont" android:layout_width="170dp" android:layout_height="170dp" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+            <TextView android:textColor="@color/white" android:id="@+id/xRotAxis" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="x: 135" android:layout_marginStart="5dp" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+            <TextView android:textColor="@color/white" android:id="@+id/yRotAxis" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="y: 25" android:layout_marginStart="5dp" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+            <TextView android:textColor="@color/white" android:id="@+id/zRotAxis" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginTop="40dp" android:text="z:150" android:layout_marginStart="5dp" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/linearLayout" android:layout_width="0dp" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/previewCont">
+                <Button android:textColor="@color/red" android:id="@+id/selectXAxis" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="X" android:layout_weight="1"/>
+                <Button android:textColor="@color/greenValue" android:id="@+id/selectYAxis" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2dp" android:text="Y" android:layout_weight="1"/>
+                <Button android:textColor="@color/blueSat" android:id="@+id/selectZAxis" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2dp" android:text="Z" android:layout_weight="1"/>
+            </LinearLayout>
+            <Button android:id="@+id/calibratePosSensor" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginTop="-6dp" android:text="@string/calibrate" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/linearLayout"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginStart="5dp">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                <com.catfixture.inputbridge.ui.custom.Chapter android:layout_width="match_parent" android:layout_height="wrap_content" app:title="Position sensor"/>
+                <CheckBox android:textColor="@color/darkGray" android:id="@+id/enablePositionSensor" android:layout_width="match_parent" android:layout_height="30dp" android:text="@string/enabled" android:layout_marginStart="-6dp"/>
+                <LinearLayout android:orientation="vertical" android:id="@+id/enabledCont" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textColor="@color/darkGray" android:id="@+id/gainSliderText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gain_text"/>
+                        <SeekBar android:id="@+id/gain" android:layout_width="match_parent" android:layout_height="wrap_content" android:max="300" android:progress="50" android:progressBackgroundTint="@color/white"/>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textColor="@color/darkGray" android:id="@+id/smoothSliderText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/smooth_text"/>
+                        <SeekBar android:id="@+id/smooth" android:layout_width="match_parent" android:layout_height="wrap_content" android:max="100" android:progress="80" android:progressBackgroundTint="@color/white"/>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+                        <TextView android:textColor="@color/darkGray" android:id="@+id/sensitivitySliderText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sensitivity_text"/>
+                        <SeekBar android:id="@+id/sensitivity" android:layout_width="match_parent" android:layout_height="wrap_content" android:max="100" android:progress="80" android:progressBackgroundTint="@color/white"/>
+                    </LinearLayout>
+                    <CheckBox android:textColor="@color/darkGray" android:id="@+id/invertAxis" android:layout_width="match_parent" android:layout_height="30dp" android:text="@string/invert_selected_axis" android:layout_marginStart="-6dp"/>
+                    <TextView android:textColor="@color/darkGray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/clamp_in_degrees_0_no_deadzone_360_unlimited_rotation"/>
+                    <com.google.android.material.slider.RangeSlider android:id="@+id/clampSlider" android:layout_width="match_parent" android:layout_height="wrap_content" android:valueFrom="0" android:valueTo="360" app:haloRadius="10dp" app:thumbColor="@color/blueSat" app:thumbRadius="7dp" app:trackColorActive="@color/blueSat" app:trackHeight="2dp" app:values="@array/initial_slider_values"/>
+                    <TextView android:textColor="@color/darkGray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/latency" android:layout_weight="0"/>
+                    <Spinner android:id="@+id/latencyChooser" android:layout_width="match_parent" android:layout_height="35dp" android:foreground="@color/lighterRecordBg" android:popupBackground="@color/white" android:backgroundTint="@color/white"/>
+                    <com.catfixture.inputbridge.ui.custom.Chapter android:layout_width="match_parent" android:layout_height="wrap_content" app:title="Bindings"/>
+                    <LinearLayout android:orientation="vertical" android:id="@+id/bindingsView" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textColor="@color/darkGray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/movement_type" android:layout_weight="0"/>
+                        <Spinner android:id="@+id/axisType" android:layout_width="match_parent" android:layout_height="35dp" android:foreground="@color/lighterRecordBg" android:popupBackground="@color/white" android:backgroundTint="@color/white"/>
+                        <TextView android:textColor="@color/darkGray" android:id="@+id/axisSelectorLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/axis" android:layout_weight="0"/>
+                        <Spinner android:id="@+id/axisSelector" android:layout_width="match_parent" android:layout_height="35dp" android:foreground="@color/lighterRecordBg" android:popupBackground="@color/white" android:backgroundTint="@color/white"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

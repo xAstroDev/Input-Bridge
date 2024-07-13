@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textColor="@color/white" android:id="@+id/sensivitySliderText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sensitivity_text"/>
+    <SeekBar android:id="@+id/sensivitySlider" android:layout_width="match_parent" android:layout_height="wrap_content" android:max="280" android:progress="80" android:progressBackgroundTint="@color/white"/>
+    <TextView android:textColor="@color/white" android:id="@+id/heightSliderText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/height_text"/>
+    <SeekBar android:id="@+id/heightSlider" android:layout_width="match_parent" android:layout_height="wrap_content" android:max="1000" android:progress="400" android:progressBackgroundTint="@color/white"/>
+    <include layout="@layout/editable_button_common"/>
+</LinearLayout>

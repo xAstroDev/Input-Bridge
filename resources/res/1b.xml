@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textColor="@color/white" android:id="@+id/swipeMinDistanceText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/min_distance_to_swipe"/>
+    <SeekBar android:id="@+id/swipeMinDistanceSlider" android:layout_width="match_parent" android:layout_height="wrap_content" android:max="500" android:progress="50" android:progressBackgroundTint="@color/white"/>
+    <CheckBox android:textSize="14sp" android:textColor="@color/white" android:id="@+id/eightDirMode" android:layout_width="match_parent" android:layout_height="40dp" android:text="@string/_8_dir_mode"/>
+    <include layout="@layout/editable_icon_element"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/swipe_up"/>
+        <Spinner android:id="@+id/codeUp" android:layout_width="match_parent" android:layout_height="35dp" android:foreground="@color/lighterRecordBg" android:popupBackground="@color/darkGray" android:backgroundTint="@color/white"/>
+        <TextView android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/swipe_down"/>
+        <Spinner android:id="@+id/codeDown" android:layout_width="match_parent" android:layout_height="35dp" android:foreground="@color/lighterRecordBg" android:popupBackground="@color/darkGray" android:backgroundTint="@color/white"/>
+        <TextView android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/swipe_left" android:layout_weight="0"/>
+        <Spinner android:id="@+id/codeLeft" android:layout_width="match_parent" android:layout_height="35dp" android:foreground="@color/lighterRecordBg" android:popupBackground="@color/darkGray" android:backgroundTint="@color/white"/>
+        <TextView android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/swipe_right"/>
+        <Spinner android:id="@+id/codeRight" android:layout_width="match_parent" android:layout_height="35dp" android:foreground="@color/lighterRecordBg" android:popupBackground="@color/darkGray" android:backgroundTint="@color/white"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/editable_button_common"/>
+    <TextView android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cheat_code_sequence_text"/>
+    <LinearLayout android:gravity="top" android:orientation="vertical" android:id="@+id/cheatCodeActionsContainer" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <TextView android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/add_action_text"/>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Spinner android:id="@+id/actionsSpinner" android:layout_width="match_parent" android:layout_height="35dp" android:foreground="@color/lighterRecordBg" android:popupBackground="@color/darkGray" android:layout_weight="1" android:backgroundTint="@color/white"/>
+        <Button android:id="@+id/addAction" android:background="@drawable/ib_button" android:padding="0dp" android:layout_width="35dp" android:layout_height="35dp" android:layout_marginLeft="5dp" android:text="@string/plus_text"/>
+    </LinearLayout>
+</LinearLayout>

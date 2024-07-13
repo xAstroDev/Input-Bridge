@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/editable_button_common"/>
+    <TextView android:textColor="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/combination"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/combinationView" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1"/>
+    <Button android:id="@+id/addKey" android:layout_width="match_parent" android:layout_height="40dp" android:text="@string/add_key"/>
+</LinearLayout>

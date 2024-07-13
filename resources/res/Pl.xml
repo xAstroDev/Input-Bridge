@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="end" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="end" android:id="@+id/mainCont" android:background="@drawable/fx_pnb_pan" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/controlsContainer" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="10dp">
+            <Spinner android:id="@+id/showProfiles" android:background="@drawable/fx_ov_profs" android:layout_width="30dp" android:layout_height="30dp" android:layout_marginEnd="15dp" style="@style/SpinnerNoText"/>
+            <ImageView android:id="@+id/toggleMice" android:layout_width="30dp" android:layout_height="30dp" android:src="@drawable/fx_ov_micekeyboard" android:layout_weight="1" android:layout_marginEnd="15dp"/>
+            <ImageView android:id="@+id/toggleControllers" android:layout_width="30dp" android:layout_height="30dp" android:src="@drawable/fx_ov_controllers" android:layout_marginEnd="15dp"/>
+            <ImageView android:id="@+id/toggleEditor" android:layout_width="30dp" android:layout_height="30dp" android:src="@drawable/fx_ov_wrc" android:layout_marginEnd="15dp"/>
+            <ImageView android:id="@+id/hide" android:layout_width="30dp" android:layout_height="30dp" android:src="@drawable/fx_ov_min" android:layout_weight="1" android:layout_marginEnd="15dp"/>
+            <ImageView android:id="@+id/close" android:layout_width="30dp" android:layout_height="30dp" android:src="@drawable/fx_ov_off" android:layout_marginEnd="10dp"/>
+        </LinearLayout>
+        <ImageView android:id="@+id/settingsIco" android:layout_width="30dp" android:layout_height="30dp" android:src="@drawable/fx_ov_settings"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="#ffffff" android:padding="3dp" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="35dp">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0">
+            <ImageView android:layout_width="35dp" android:layout_height="35dp" android:src="@drawable/ico_no_shad"/>
+            <TextView android:textSize="8sp" android:textStyle="bold" android:textColor="@color/darkGray" android:ellipsize="end" android:id="@+id/serviceStatus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-3dp" android:text="" android:maxLines="1" android:layout_weight="1" android:textAllCaps="true" android:layout_marginStart="-3dp"/>
+        </RelativeLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="35dp">
+            <Spinner android:id="@+id/inputProfiles" android:background="@color/default_field_color" android:layout_width="wrap_content" android:layout_height="match_parent" android:popupBackground="@color/default_field_color" android:layout_weight="1" android:layout_marginStart="3dp"/>
+            <Button android:id="@+id/addProfile" android:background="@drawable/ib_button" android:padding="0dp" android:layout_width="35dp" android:layout_height="35dp" android:text="@string/plus_text" android:layout_marginStart="3dp"/>
+            <Button android:id="@+id/editProfileName" android:background="@drawable/ib_button" android:padding="0dp" android:layout_width="35dp" android:layout_height="35dp" android:text="@string/edit_unicode" android:layout_marginStart="3dp"/>
+            <Button android:id="@+id/shareProfile" android:background="@drawable/ib_button" android:padding="0dp" android:layout_width="35dp" android:layout_height="35dp" android:layout_marginStart="3dp" app:icon="@drawable/share_icon" app:iconGravity="2" app:iconPadding="0dp"/>
+            <Button android:id="@+id/removeProfile" android:background="@drawable/ib_button" android:padding="0dp" android:layout_width="35dp" android:layout_height="35dp" android:text="@string/close_icon" android:layout_marginStart="3dp"/>
+            <Button android:ellipsize="end" android:id="@+id/importProf" android:background="@drawable/ib_button" android:padding="0dp" android:layout_width="35dp" android:layout_height="35dp" android:text="I" android:layout_marginStart="3dp"/>
+            <Button android:id="@+id/exportProf" android:background="@drawable/ib_button" android:padding="0dp" android:layout_width="35dp" android:layout_height="35dp" android:text="E" android:layout_marginStart="3dp"/>
+            <Button android:id="@+id/dublikProf" android:background="@drawable/ib_button" android:padding="0dp" android:layout_width="35dp" android:layout_height="35dp" android:text="C" android:layout_marginStart="3dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <com.catfixture.inputbridge.ui.custom.WarningComponent android:id="@+id/noProfilesErr" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0" app:warningText="@string/cre_pro_text"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/cont" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="3dp" android:layout_weight="0">
+        <RelativeLayout android:layout_width="35dp" android:layout_height="match_parent">
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/tabsButtonsContainer" android:background="#f3f3f3" android:layout_width="35dp" android:layout_height="match_parent" android:layout_weight="0"/>
+            <View android:id="@+id/marker" android:background="@color/darkGray" android:layout_width="2dp" android:layout_height="34dp"/>
+        </RelativeLayout>
+        <ScrollView android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1">
+            <LinearLayout android:orientation="vertical" android:id="@+id/tabsContentContainer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="3dp"/>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

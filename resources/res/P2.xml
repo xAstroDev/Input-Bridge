@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/editable_button_common"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <CheckBox android:textSize="14sp" android:textColor="@color/white" android:id="@+id/buttonTriggerMode" android:layout_width="wrap_content" android:layout_height="40dp" android:text="@string/trigger_mode"/>
+        <CheckBox android:textSize="14sp" android:textColor="@color/white" android:id="@+id/buttonMouseMode" android:layout_width="wrap_content" android:layout_height="40dp" android:text="@string/mouse_mode"/>
+    </LinearLayout>
+    <include android:id="@+id/triggerModeColor" android:visibility="gone" layout="@layout/color_picker_field_layout"/>
+    <include layout="@layout/editable_button_common_type"/>
+</LinearLayout>

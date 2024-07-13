@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:background="@color/lightestTint" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/preview" android:layout_width="50dp" android:layout_height="50dp" android:layout_weight="0" app:srcCompat="@android:drawable/ic_dialog_dialer"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="5dp">
+        <TextView android:textStyle="bold" android:textColor="@color/darkGray" android:id="@+id/name" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Name: Maga super pack"/>
+        <TextView android:textColor="@color/darkGray" android:id="@+id/author" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="By: SweetFx"/>
+        <TextView android:textColor="@color/darkGray" android:id="@+id/imagesCount" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Icons: 16"/>
+        <TextView android:textColor="@color/darkGray" android:id="@+id/packSize" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Size: 16kB"/>
+    </LinearLayout>
+    <ToggleButton android:id="@+id/enableIconPack" android:layout_width="wrap_content" android:layout_height="40dp" android:textOn="@string/enabled" android:textOff="@string/disabled" android:text="ToggleButton" android:layout_weight="0"/>
+    <ImageView android:id="@+id/removeButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0" app:srcCompat="@android:drawable/ic_delete"/>
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:isScrollContainer="false">
+    <com.catfixture.inputbridge.ui.custom.Chapter android:layout_width="match_parent" android:layout_height="wrap_content" app:title="@string/performance"/>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_weight="0">
+        <ImageView android:layout_width="20dp" android:layout_height="20dp" android:layout_weight="0" app:srcCompat="@drawable/axes"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="5dp">
+            <TextView android:textColor="@color/darkGray" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/pipeline_rate_text"/>
+            <SeekBar android:id="@+id/pipeRate" android:layout_width="match_parent" android:layout_height="wrap_content" android:max="100" android:progress="30" android:layout_weight="0"/>
+        </LinearLayout>
+        <TextView android:textSize="27sp" android:textColor="@color/black" android:id="@+id/buttonEngineRateText" android:layout_width="50dp" android:layout_height="wrap_content" android:text="30" android:layout_weight="0" android:fontFamily="@font/dg7" android:textAlignment="textEnd"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0" android:alpha="0.5">
+        <ImageView android:layout_width="20dp" android:layout_height="20dp" android:layout_weight="0" app:srcCompat="@drawable/driver_ico"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="5dp">
+            <TextView android:textColor="@color/darkGray" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/ib_driver_rate"/>
+            <SeekBar android:id="@+id/ibDriverRate" android:layout_width="match_parent" android:layout_height="wrap_content" android:max="100" android:progress="60" android:layout_weight="0"/>
+        </LinearLayout>
+        <TextView android:textSize="27sp" android:textColor="@color/black" android:id="@+id/ibDriverRateText" android:layout_width="50dp" android:layout_height="wrap_content" android:text="60" android:layout_weight="0" android:fontFamily="@font/dg7" android:textAlignment="textEnd"/>
+    </LinearLayout>
+    <CheckBox android:textColor="@color/darkGray" android:id="@+id/filterActions" android:layout_width="match_parent" android:layout_height="30dp" android:text="@string/filter_actions" android:layout_marginStart="-6dp"/>
+    <CheckBox android:textColor="@color/darkGray" android:id="@+id/forceEvents" android:layout_width="match_parent" android:layout_height="30dp" android:text="@string/force_events" android:layout_marginStart="-6dp"/>
+    <com.catfixture.inputbridge.ui.custom.Chapter android:layout_width="match_parent" android:layout_height="wrap_content" app:title="GSS - Graphics Statistics Service"/>
+    <CheckBox android:textColor="@color/darkGray" android:id="@+id/showRAM" android:layout_width="match_parent" android:layout_height="30dp" android:text="@string/show_used_ram_text" android:layout_marginStart="-6dp"/>
+    <TextView android:textColor="@color/darkGray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/font_size"/>
+    <SeekBar android:id="@+id/gssFontSize" android:layout_width="match_parent" android:layout_height="wrap_content" android:max="25" android:progress="12" android:progressBackgroundTint="@color/white"/>
+    <Button android:id="@+id/addSensor" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/manage_sensors" style="@style/IBButton"/>
+</LinearLayout>
